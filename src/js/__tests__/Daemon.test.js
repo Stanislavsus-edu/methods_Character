@@ -1,6 +1,6 @@
 import Character from '../app';
 
-test('create Character ok', () => {
+test('create Daemon ok', () => {
   const character = new Character('Harry', 'Daemon');
   const result = {
     name: 'Harry',
