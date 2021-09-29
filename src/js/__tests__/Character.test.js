@@ -22,17 +22,6 @@ test('create Character type ok', () => {
   expect(character.type).toBe('Magician');
 });
 
-test('create Character ok', () => {
-  const character = new Character('Harry', 'Magician');
-  const result = {
-    name: 'Harry',
-    type: 'Magician',
-    health: 100,
-    level: 1,
-  };
-  expect(character).toMatchObject(result);
-});
-
 test('create Character levelUp 0', () => {
   const character = new Character('Harry', 'Magician');
   character.health = 0;
